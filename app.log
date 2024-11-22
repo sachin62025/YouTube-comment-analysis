@@ -1,0 +1,14 @@
+2024-11-22 16:01:38,795 - INFO - Application started: YouTube Sentiment Analysis
+2024-11-22 16:01:38,802 - INFO - Application started: YouTube Sentiment Analysis
+2024-11-22 16:01:38,808 - INFO - Application started: YouTube Sentiment Analysis
+2024-11-22 16:01:40,127 - INFO - Application started: YouTube Sentiment Analysis
+2024-11-22 16:01:46,741 - INFO - Application started: YouTube Sentiment Analysis
+2024-11-22 16:01:46,761 - INFO - Analyze button clicked. Starting analysis.
+2024-11-22 16:01:46,784 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-22 16:01:48,425 - INFO - Comments successfully extracted.
+2024-11-22 16:01:48,433 - INFO - Displaying video statistics and results.
+2024-11-22 16:01:53,863 - INFO - Comments analyzed.
+2024-11-22 16:01:55,412 - INFO - Time-based analysis completed.
+2024-11-22 16:01:59,338 - INFO - Question comments analyzed.
+2024-11-22 16:01:59,464 - INFO - Toxicity and profanity analysis completed.
+2024-11-22 16:01:59,487 - INFO - Analysis results and data download button displayed.
