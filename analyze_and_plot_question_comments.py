@@ -11,7 +11,7 @@ def analyze_and_plot_question_comments(dataframe):
     # nlp = spacy.load("en_core_web_sm")
 
     # try:
-    nlp = spacy.load("/home/adminuser/venv/lib/python3.12/site-packages/en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
     # except OSError:
     #     # Download the model if it is not found
     #     # subprocess.call(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
