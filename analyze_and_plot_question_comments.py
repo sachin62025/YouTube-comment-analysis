@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from cleantext import clean
 import pandas as pd
-import subprocess
+# import subprocess
 
 def analyze_and_plot_question_comments(dataframe):
     comment_column = 'comment'
@@ -14,8 +14,10 @@ def analyze_and_plot_question_comments(dataframe):
         nlp = spacy.load("en_core_web_sm")
     except OSError:
         # Download the model if it is not found
-        subprocess.call(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
-        nlp = spacy.load("en_core_web_sm")
+        # subprocess.call(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
+        # nlp = spacy.load("en_core_web_sm")
+        st.write("spaCy model 'en_core_web_sm' is not found. Please ensure it is downloaded.")
+        return None
 
     
     # Function to detect if a comment is a question
