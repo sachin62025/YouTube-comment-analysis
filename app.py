@@ -18,6 +18,7 @@ from analyze_and_plot_question_comments import analyze_and_plot_question_comment
 from toxicity_and_profanity_detection import toxicity_and_profanity_detection
 from sentiment_analysis_on_comments import sentiment_analysis_on_comments
 import spacy
+from emotion_analysis import emotion_analysis
 # import os
 
 # try:
@@ -98,6 +99,8 @@ if analyze_button:
                 logger.info("Question comments analyzed.")
                 df = toxicity_and_profanity_detection(df)
                 logger.info("Toxicity and profanity analysis completed.")
+                df = emotion_analysis(df)
+                logger.info("Emotional Analysis Completed.")
                 
                 # Display the final DataFrame sample
                 st.dataframe(df[['author', 'comment', 'timestamp', 'comment_likes', 'sentiment_score', 'sentiment',
