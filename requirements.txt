@@ -7,3 +7,5 @@ streamlit
 scikit-learn
 wordcloud
 clean-text
+spacy
+logging
