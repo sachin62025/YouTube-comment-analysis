@@ -9,4 +9,5 @@ wordcloud
 clean-text
 spacy
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz
-transformers
+transformers==4.34.0
+torch==2.0.1
