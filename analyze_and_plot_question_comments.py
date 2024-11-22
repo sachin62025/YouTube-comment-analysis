@@ -10,14 +10,14 @@ def analyze_and_plot_question_comments(dataframe):
     # Load the spaCy English model
     # nlp = spacy.load("en_core_web_sm")
 
-    try:
-        nlp = spacy.load("en_core_web_sm")
-    except OSError:
-        # Download the model if it is not found
-        # subprocess.call(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
-        # nlp = spacy.load("en_core_web_sm")
-        st.write("spaCy model 'en_core_web_sm' is not found. Please ensure it is downloaded.")
-        return None
+    # try:
+    nlp = spacy.load("en_core_web_sm")
+    # except OSError:
+    #     # Download the model if it is not found
+    #     # subprocess.call(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
+    #     # nlp = spacy.load("en_core_web_sm")
+    #     st.write("spaCy model 'en_core_web_sm' is not found. Please ensure it is downloaded.")
+    #     return None
 
     
     # Function to detect if a comment is a question
