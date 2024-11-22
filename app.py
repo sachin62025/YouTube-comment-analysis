@@ -99,6 +99,7 @@ if analyze_button:
                 logger.info("Question comments analyzed.")
                 df = toxicity_and_profanity_detection(df)
                 logger.info("Toxicity and profanity analysis completed.")
+                st.subheader('Emotional Analysis: ')
                 df = emotion_analysis(df)
                 logger.info("Emotional Analysis Completed.")
 
