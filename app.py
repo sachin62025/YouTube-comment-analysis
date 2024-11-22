@@ -101,10 +101,11 @@ if analyze_button:
                 logger.info("Toxicity and profanity analysis completed.")
                 df = emotion_analysis(df)
                 logger.info("Emotional Analysis Completed.")
-                
+
+                st.subheader("Complete Analysis Data")
                 # Display the final DataFrame sample
                 st.dataframe(df[['author', 'comment', 'timestamp', 'comment_likes', 'sentiment_score', 'sentiment',
-                                 'comment_length_chars', 'comment_length_words', 'hour', 'day_of_week', 'is_question']].head(10))
+                                 'comment_length_chars', 'comment_length_words', 'hour', 'day_of_week', 'is_question','emotion']].head(10))
                 
                 # Convert DataFrame to CSV
                 csv_data = df.to_csv(index=False)
