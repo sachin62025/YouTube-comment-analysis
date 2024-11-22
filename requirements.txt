@@ -7,6 +7,6 @@ streamlit
 scikit-learn
 wordcloud
 clean-text
-spacy
-spacy[en_core_web_sm]
+spacy==3.5.0
+en-core-web-sm==3.5.0
 
