@@ -8,3 +8,4 @@ scikit-learn
 wordcloud
 clean-text
 spacy
+spacy[en_core_web_sm]
