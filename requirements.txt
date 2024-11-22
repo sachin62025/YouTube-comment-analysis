@@ -9,4 +9,4 @@ wordcloud
 clean-text
 spacy
 logging
-spacy[en_core_web_sm]
+os
