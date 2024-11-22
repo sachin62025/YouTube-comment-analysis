@@ -8,5 +8,8 @@ scikit-learn
 wordcloud
 clean-text
 spacy==3.5.0
+thinc==8.1.0
 en-core-web-sm==3.5.0
+cleantext==1.1.0
+streamlit==1.40.1
 
