@@ -21,9 +21,12 @@ import spacy
 import os
 
 try:
+    # Try loading the model
     nlp = spacy.load("en_core_web_sm")
-except OSError:
-    # print("Downloading 'en_core_web_sm' model...")
+except OSError as e:
+    # If model is missing, download it and load again
+    print(f"Error loading 'en_core_web_sm': {e}")
+    print("Attempting to download the model...")
     os.system("python -m spacy download en_core_web_sm")
     nlp = spacy.load("en_core_web_sm")
 
