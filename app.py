@@ -17,6 +17,15 @@ from time_based_analysis import time_based_analysis
 from analyze_and_plot_question_comments import analyze_and_plot_question_comments
 from toxicity_and_profanity_detection import toxicity_and_profanity_detection
 from sentiment_analysis_on_comments import sentiment_analysis_on_comments
+import spacy
+import os
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    # print("Downloading 'en_core_web_sm' model...")
+    os.system("python -m spacy download en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 # Set up logging
 logging.basicConfig(
